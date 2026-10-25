@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // unos podataka,
+            let ime=prompt("unesi svoje ime:");
+            let cijenajedneulaznice=Number(prompt("unesi cijenu jedne ulaznice"));
+            let brojulaznice=Number(prompt("unesi broj ulaznica"));
+            let budzet=Number(prompt("unesi svoji budzet"));
+            //izračun
+
+            let ukupnitrosak= cijenajedneulaznice*brojulaznice;
+            let preostaliiznos= budzet-ukupnitrosak;
+            let dovoljanbudzets= budzet>=ukupnitrosak;
+            let tocnodovoljanbudzet=budzet == ukupnitrosak;
+            let nastavi=confirm("zelis li nastavit planiranje izleta?");
+            //usporedbe
+
+            alert("ime "+ime+"\nukupni trosak "+ukupnitrosak+"\npreostali iznos "+preostaliiznos+"\ndovoljan budžet "+dovoljanbudzets+"\ntocno dovoljan budžet "+tocnodovoljanbudzet+"\nnastavi planiranje "+nastavi);
+        </script>
+    </body>
+</html>
